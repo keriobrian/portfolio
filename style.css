@@ -140,6 +140,28 @@ table {
 
 /* Custom Styles */
 
+
+@font-face {
+	font-family: Regular;
+	font-style: normal;
+	font-weight: 400;
+	src: url('./fonts/GT-Alpina-Condensed-Regular.woff') format('woff'), url('./fonts/GT-Alpina-Condensed-Regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: Thin;
+	font-style: normal;
+	font-weight: 400;
+	src: url('./fonts/GT-Alpina-Condensed-Thin.woff') format('woff'), url('./fonts/GT-Alpina-Condensed-Thin.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: Italic;
+	font-style: italic;
+	font-weight: 400;
+	src: url('./fonts/GT-Alpina-Condensed-Regular-Italic.woff') format('woff'), url('./fonts/GT-Alpina-Condensed-Regular-Italic.woff2') format('woff2');
+}
+
 :root {
 	/* Colors */
 	--background-main: #f2ddee; /* lilac */
@@ -148,8 +170,6 @@ table {
 	--accent: #f96030; /*red-orange */
 
 	/* Type */
-	--ff-serif-thin: "GT Alpina Cond Thin", Georgia, "Times New Roman", Times, serif;
-	--ff-serif-reg: "GT Alpina Cond", Georgia, "Times New Roman", Times, serif;
 	--fs-lg: 5vmax;
 	--fs-md: 3vmax;
 	--fs-sm: 2.5vmax;
@@ -180,18 +200,17 @@ body {
 
 h1 {
 	margin-bottom: 5vmax;
-	font-family: var(--ff-serif-thin);
+	font-family: Thin;
 	font-size: var(--fs-lg);
 }
 
 h2 {
-	font-family: var(--ff-serif-reg);
+	font-family: Italic;
 	font-size: var(--fs-sm);
-	font-style: italic;
 }
 
 h3 {
-	font-family: var(--ff-serif-thin);
+	font-family: Thin;
 	font-size: var(--fs-lg);
 }
 
@@ -221,7 +240,7 @@ h3 {
 
 .skills-list {
 	columns: 2 auto;
-	font-family: var(--ff-serif-reg);
+	font-family: Regular;
 	font-size: var(--fs-md);
 }
 
@@ -268,7 +287,7 @@ h3 {
 }
 
 .projects {
-	font-family: var(--ff-serif-thin);
+	font-family: Thin;
 	font-size: var(--fs-lg);
 	position: relative;
 	z-index: 1;
@@ -373,7 +392,7 @@ h3 {
 	display: inline-block;
 	margin-top: 30px;
 	padding: 10px 20px;
-	font-family: var(--ff-serif-reg);
+	font-family: Italic;
 	font-size: var(--fs-sm);
 	font-style: italic;
 	color: var(--background-accent);
